@@ -7,6 +7,11 @@
 //
 
 import SwiftUI
+struct BikingData: Identifiable {
+    var id = UUID()
+    var distance: Int
+    var duration: Int
+}
 
 struct bikingView: View {
     var body: some View {

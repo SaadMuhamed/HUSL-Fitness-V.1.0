@@ -8,11 +8,18 @@
 
 import SwiftUI
 
+struct CalendarData: Identifiable {
+    var id = UUID()
+    var day: String
+    var dayDate: Int
+    var month: String
+}
+
 struct CalendarModelView: View {
     var body: some View {
         
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
+            HStack(alignment: .center) {
                 ForEach(0..<5) { day in
                     VStack(alignment: .center) {
                         Text("Day")

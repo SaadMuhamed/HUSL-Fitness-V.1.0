@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+struct RunningData: Identifiable {
+    var id = UUID()
+    var distance: Int
+    var duration: Int
+}
+
 struct runningView: View {
     var body: some View {
         NavigationView {

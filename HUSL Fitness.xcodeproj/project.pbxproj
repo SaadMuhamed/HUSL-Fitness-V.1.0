@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1764F56DB7256EC870A83658 /* Pods_HUSL_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7482B065A0CFEA6F2E1EAB /* Pods_HUSL_Fitness.framework */; };
+		3730BDFB640752A778174778 /* Pods_HUSL_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004970C3DAC0D47B9D8487C2 /* Pods_HUSL_FitnessTests.framework */; };
+		3A47A9B9250035FE00722737 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A47A9B8250035FE00722737 /* GoogleService-Info.plist */; };
+		3A63FAF724FE8CCA00A72AD0 /* ExercisesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63FAF624FE8CCA00A72AD0 /* ExercisesModels.swift */; };
 		3A6B51C224CC674100835142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B51C124CC674100835142 /* AppDelegate.swift */; };
 		3A6B51C424CC674100835142 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B51C324CC674100835142 /* SceneDelegate.swift */; };
 		3A6B51C724CC674100835142 /* HUSL_Fitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B51C524CC674100835142 /* HUSL_Fitness.xcdatamodeld */; };
@@ -15,6 +19,27 @@
 		3A6B51CE24CC674300835142 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B51CD24CC674300835142 /* Preview Assets.xcassets */; };
 		3A6B51D124CC674300835142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B51CF24CC674300835142 /* LaunchScreen.storyboard */; };
 		3A6B51DC24CC674300835142 /* HUSL_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B51DB24CC674300835142 /* HUSL_FitnessTests.swift */; };
+		3ABD683724E05EF9007C850F /* meditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD683624E05EF9007C850F /* meditationView.swift */; };
+		3ABD683924E06BAA007C850F /* profileModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD683824E06BA9007C850F /* profileModelView.swift */; };
+		3ABD683B24E06BBC007C850F /* notificationsModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD683A24E06BBC007C850F /* notificationsModelView.swift */; };
+		3ABD683E24E06BEA007C850F /* activityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD683D24E06BEA007C850F /* activityView.swift */; };
+		3ABD684024E06BF6007C850F /* runningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD683F24E06BF6007C850F /* runningView.swift */; };
+		3ABD684224E06C04007C850F /* bikingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD684124E06C04007C850F /* bikingView.swift */; };
+		3ABD684424E06C13007C850F /* logYourFitnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD684324E06C13007C850F /* logYourFitnessView.swift */; };
+		3ABD684824E0CFF0007C850F /* circleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD684724E0CFF0007C850F /* circleProgressView.swift */; };
+		3ABD684D24E10C0A007C850F /* breakfastModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD684C24E10C0A007C850F /* breakfastModelView.swift */; };
+		3ABD684F24E10C1A007C850F /* lunchModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD684E24E10C1A007C850F /* lunchModelView.swift */; };
+		3ABD685124E10C27007C850F /* dinnerModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD685024E10C27007C850F /* dinnerModelView.swift */; };
+		3AE5879524E92B2900818859 /* registrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5879424E92B2900818859 /* registrationView.swift */; };
+		3AF369AE25001DD700BC801A /* CalendarModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF369AD25001DD700BC801A /* CalendarModelView.swift */; };
+		3AF7F0E724D207E70018841F /* workoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F0E624D207E70018841F /* workoutsView.swift */; };
+		3AF7F0E924D207FB0018841F /* communityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F0E824D207FB0018841F /* communityView.swift */; };
+		3AF7F0EB24D208140018841F /* addNewStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F0EA24D208140018841F /* addNewStoryView.swift */; };
+		3AF7F0ED24D2082A0018841F /* nutritionAndDietView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F0EC24D2082A0018841F /* nutritionAndDietView.swift */; };
+		3AF7F0EF24D208380018841F /* yogaAndMeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F0EE24D208380018841F /* yogaAndMeditationView.swift */; };
+		3AF7F11B24D211700018841F /* exercisesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F11A24D211700018841F /* exercisesViews.swift */; };
+		3AF7F11D24D211900018841F /* yogaExercisesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F11C24D211900018841F /* yogaExercisesViews.swift */; };
+		3AF7F12C24D233040018841F /* homePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F12B24D233040018841F /* homePageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004970C3DAC0D47B9D8487C2 /* Pods_HUSL_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUSL_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		217E46197F6F14F7C6081AB3 /* Pods-HUSL Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUSL Fitness.release.xcconfig"; path = "Target Support Files/Pods-HUSL Fitness/Pods-HUSL Fitness.release.xcconfig"; sourceTree = "<group>"; };
+		3A47A9B8250035FE00722737 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A63FAF624FE8CCA00A72AD0 /* ExercisesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModels.swift; sourceTree = "<group>"; };
 		3A6B51BE24CC674100835142 /* HUSL Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HUSL Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B51C124CC674100835142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6B51C324CC674100835142 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +69,32 @@
 		3A6B51D724CC674300835142 /* HUSL FitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HUSL FitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B51DB24CC674300835142 /* HUSL_FitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUSL_FitnessTests.swift; sourceTree = "<group>"; };
 		3A6B51DD24CC674300835142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABD683624E05EF9007C850F /* meditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationView.swift; sourceTree = "<group>"; };
+		3ABD683824E06BA9007C850F /* profileModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileModelView.swift; sourceTree = "<group>"; };
+		3ABD683A24E06BBC007C850F /* notificationsModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsModelView.swift; sourceTree = "<group>"; };
+		3ABD683D24E06BEA007C850F /* activityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityView.swift; sourceTree = "<group>"; };
+		3ABD683F24E06BF6007C850F /* runningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runningView.swift; sourceTree = "<group>"; };
+		3ABD684124E06C04007C850F /* bikingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bikingView.swift; sourceTree = "<group>"; };
+		3ABD684324E06C13007C850F /* logYourFitnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logYourFitnessView.swift; sourceTree = "<group>"; };
+		3ABD684724E0CFF0007C850F /* circleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleProgressView.swift; sourceTree = "<group>"; };
+		3ABD684C24E10C0A007C850F /* breakfastModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breakfastModelView.swift; sourceTree = "<group>"; };
+		3ABD684E24E10C1A007C850F /* lunchModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lunchModelView.swift; sourceTree = "<group>"; };
+		3ABD685024E10C27007C850F /* dinnerModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dinnerModelView.swift; sourceTree = "<group>"; };
+		3ADD873E25000BE200E2198F /* HUSL Fitness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HUSL Fitness.entitlements"; sourceTree = "<group>"; };
+		3AE5879424E92B2900818859 /* registrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registrationView.swift; sourceTree = "<group>"; };
+		3AF369AD25001DD700BC801A /* CalendarModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModelView.swift; sourceTree = "<group>"; };
+		3AF7F0E624D207E70018841F /* workoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutsView.swift; sourceTree = "<group>"; };
+		3AF7F0E824D207FB0018841F /* communityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communityView.swift; sourceTree = "<group>"; };
+		3AF7F0EA24D208140018841F /* addNewStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewStoryView.swift; sourceTree = "<group>"; };
+		3AF7F0EC24D2082A0018841F /* nutritionAndDietView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutritionAndDietView.swift; sourceTree = "<group>"; };
+		3AF7F0EE24D208380018841F /* yogaAndMeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogaAndMeditationView.swift; sourceTree = "<group>"; };
+		3AF7F11A24D211700018841F /* exercisesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercisesViews.swift; sourceTree = "<group>"; };
+		3AF7F11C24D211900018841F /* yogaExercisesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogaExercisesViews.swift; sourceTree = "<group>"; };
+		3AF7F12B24D233040018841F /* homePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageController.swift; sourceTree = "<group>"; };
+		4C995CFC89C791DAB8BF5AF7 /* Pods-HUSL FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUSL FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-HUSL FitnessTests/Pods-HUSL FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D7482B065A0CFEA6F2E1EAB /* Pods_HUSL_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUSL_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87BC83A20923E158E69C53A /* Pods-HUSL Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUSL Fitness.debug.xcconfig"; path = "Target Support Files/Pods-HUSL Fitness/Pods-HUSL Fitness.debug.xcconfig"; sourceTree = "<group>"; };
+		F94BAB56554BFA96ECB900D3 /* Pods-HUSL FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUSL FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-HUSL FitnessTests/Pods-HUSL FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1764F56DB7256EC870A83658 /* Pods_HUSL_Fitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3730BDFB640752A778174778 /* Pods_HUSL_FitnessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +123,8 @@
 				3A6B51C024CC674100835142 /* HUSL Fitness */,
 				3A6B51DA24CC674300835142 /* HUSL FitnessTests */,
 				3A6B51BF24CC674100835142 /* Products */,
+				48A5AA2C9890FD803CEB23C5 /* Pods */,
+				927484B2F59F85AC4F6BA99D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +140,14 @@
 		3A6B51C024CC674100835142 /* HUSL Fitness */ = {
 			isa = PBXGroup;
 			children = (
-				3A6B51C124CC674100835142 /* AppDelegate.swift */,
-				3A6B51C324CC674100835142 /* SceneDelegate.swift */,
-				3A6B51C824CC674100835142 /* ContentView.swift */,
+				3ADD873E25000BE200E2198F /* HUSL Fitness.entitlements */,
+				3A6B51E624CC734E00835142 /* Required Views */,
+				3A6B51E724CC735700835142 /* Views */,
+				3A6B51E824CC736500835142 /* Controllers */,
+				3A6B51E924CC73AB00835142 /* Supporting files */,
 				3A6B51CA24CC674300835142 /* Assets.xcassets */,
 				3A6B51CF24CC674300835142 /* LaunchScreen.storyboard */,
+				3A47A9B8250035FE00722737 /* GoogleService-Info.plist */,
 				3A6B51D224CC674300835142 /* Info.plist */,
 				3A6B51C524CC674100835142 /* HUSL_Fitness.xcdatamodeld */,
 				3A6B51CC24CC674300835142 /* Preview Content */,
@@ -110,6 +172,112 @@
 			path = "HUSL FitnessTests";
 			sourceTree = "<group>";
 		};
+		3A6B51E624CC734E00835142 /* Required Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD683D24E06BEA007C850F /* activityView.swift */,
+				3AF369AD25001DD700BC801A /* CalendarModelView.swift */,
+				3ABD684124E06C04007C850F /* bikingView.swift */,
+				3ABD683F24E06BF6007C850F /* runningView.swift */,
+			);
+			path = "Required Views";
+			sourceTree = "<group>";
+		};
+		3A6B51E724CC735700835142 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AE5879424E92B2900818859 /* registrationView.swift */,
+				3AF7F12024D22E480018841F /* WorkoutsViews */,
+				3AF7F0E824D207FB0018841F /* communityView.swift */,
+				3AF7F0EA24D208140018841F /* addNewStoryView.swift */,
+				3ABD684924E10BC6007C850F /* NutritionViews */,
+				3AF7F12124D22E520018841F /* YogaViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A6B51E824CC736500835142 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B51C824CC674100835142 /* ContentView.swift */,
+				3AF7F12B24D233040018841F /* homePageController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3A6B51E924CC73AB00835142 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B51C124CC674100835142 /* AppDelegate.swift */,
+				3A6B51C324CC674100835142 /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		3ABD683C24E06BD4007C850F /* AllWorkoutsViews */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD684324E06C13007C850F /* logYourFitnessView.swift */,
+			);
+			path = AllWorkoutsViews;
+			sourceTree = "<group>";
+		};
+		3ABD684924E10BC6007C850F /* NutritionViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7F0EC24D2082A0018841F /* nutritionAndDietView.swift */,
+				3ABD684C24E10C0A007C850F /* breakfastModelView.swift */,
+				3ABD684E24E10C1A007C850F /* lunchModelView.swift */,
+				3ABD685024E10C27007C850F /* dinnerModelView.swift */,
+			);
+			path = NutritionViews;
+			sourceTree = "<group>";
+		};
+		3AF7F12024D22E480018841F /* WorkoutsViews */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD683C24E06BD4007C850F /* AllWorkoutsViews */,
+				3AF7F0E624D207E70018841F /* workoutsView.swift */,
+				3ABD684724E0CFF0007C850F /* circleProgressView.swift */,
+				3AF7F11A24D211700018841F /* exercisesViews.swift */,
+				3A63FAF624FE8CCA00A72AD0 /* ExercisesModels.swift */,
+				3ABD683824E06BA9007C850F /* profileModelView.swift */,
+				3ABD683A24E06BBC007C850F /* notificationsModelView.swift */,
+			);
+			path = WorkoutsViews;
+			sourceTree = "<group>";
+		};
+		3AF7F12124D22E520018841F /* YogaViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7F0EE24D208380018841F /* yogaAndMeditationView.swift */,
+				3AF7F11C24D211900018841F /* yogaExercisesViews.swift */,
+				3ABD683624E05EF9007C850F /* meditationView.swift */,
+			);
+			path = YogaViews;
+			sourceTree = "<group>";
+		};
+		48A5AA2C9890FD803CEB23C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87BC83A20923E158E69C53A /* Pods-HUSL Fitness.debug.xcconfig */,
+				217E46197F6F14F7C6081AB3 /* Pods-HUSL Fitness.release.xcconfig */,
+				F94BAB56554BFA96ECB900D3 /* Pods-HUSL FitnessTests.debug.xcconfig */,
+				4C995CFC89C791DAB8BF5AF7 /* Pods-HUSL FitnessTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		927484B2F59F85AC4F6BA99D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D7482B065A0CFEA6F2E1EAB /* Pods_HUSL_Fitness.framework */,
+				004970C3DAC0D47B9D8487C2 /* Pods_HUSL_FitnessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6B51E024CC674300835142 /* Build configuration list for PBXNativeTarget "HUSL Fitness" */;
 			buildPhases = (
+				9F3FF491627ADD91355340EE /* [CP] Check Pods Manifest.lock */,
 				3A6B51BA24CC674100835142 /* Sources */,
 				3A6B51BB24CC674100835142 /* Frameworks */,
 				3A6B51BC24CC674100835142 /* Resources */,
+				E088DE8FBFBC794D5C626124 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6B51E324CC674300835142 /* Build configuration list for PBXNativeTarget "HUSL FitnessTests" */;
 			buildPhases = (
+				5662ECC7EDBAA17E34E54E65 /* [CP] Check Pods Manifest.lock */,
 				3A6B51D324CC674300835142 /* Sources */,
 				3A6B51D424CC674300835142 /* Frameworks */,
 				3A6B51D524CC674300835142 /* Resources */,
@@ -155,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Saad Muhamed";
 				TargetAttributes = {
 					3A6B51BD24CC674100835142 = {
@@ -192,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6B51D124CC674300835142 /* LaunchScreen.storyboard in Resources */,
+				3A47A9B9250035FE00722737 /* GoogleService-Info.plist in Resources */,
 				3A6B51CE24CC674300835142 /* Preview Assets.xcassets in Resources */,
 				3A6B51CB24CC674300835142 /* Assets.xcassets in Resources */,
 			);
@@ -206,15 +378,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5662ECC7EDBAA17E34E54E65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HUSL FitnessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3FF491627ADD91355340EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HUSL Fitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E088DE8FBFBC794D5C626124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HUSL Fitness/Pods-HUSL Fitness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HUSL Fitness/Pods-HUSL Fitness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HUSL Fitness/Pods-HUSL Fitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A6B51BA24CC674100835142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF7F0EB24D208140018841F /* addNewStoryView.swift in Sources */,
+				3AF7F0EF24D208380018841F /* yogaAndMeditationView.swift in Sources */,
+				3A63FAF724FE8CCA00A72AD0 /* ExercisesModels.swift in Sources */,
+				3ABD683B24E06BBC007C850F /* notificationsModelView.swift in Sources */,
+				3AF7F11D24D211900018841F /* yogaExercisesViews.swift in Sources */,
+				3ABD684024E06BF6007C850F /* runningView.swift in Sources */,
+				3AF369AE25001DD700BC801A /* CalendarModelView.swift in Sources */,
+				3ABD684D24E10C0A007C850F /* breakfastModelView.swift in Sources */,
+				3ABD684824E0CFF0007C850F /* circleProgressView.swift in Sources */,
 				3A6B51C224CC674100835142 /* AppDelegate.swift in Sources */,
 				3A6B51C424CC674100835142 /* SceneDelegate.swift in Sources */,
+				3ABD684424E06C13007C850F /* logYourFitnessView.swift in Sources */,
+				3AF7F0E724D207E70018841F /* workoutsView.swift in Sources */,
+				3ABD685124E10C27007C850F /* dinnerModelView.swift in Sources */,
+				3AF7F12C24D233040018841F /* homePageController.swift in Sources */,
+				3ABD684F24E10C1A007C850F /* lunchModelView.swift in Sources */,
+				3ABD684224E06C04007C850F /* bikingView.swift in Sources */,
 				3A6B51C924CC674100835142 /* ContentView.swift in Sources */,
+				3AF7F11B24D211700018841F /* exercisesViews.swift in Sources */,
+				3AF7F0ED24D2082A0018841F /* nutritionAndDietView.swift in Sources */,
+				3AF7F0E924D207FB0018841F /* communityView.swift in Sources */,
+				3AE5879524E92B2900818859 /* registrationView.swift in Sources */,
+				3ABD683724E05EF9007C850F /* meditationView.swift in Sources */,
 				3A6B51C724CC674100835142 /* HUSL_Fitness.xcdatamodeld in Sources */,
+				3ABD683924E06BAA007C850F /* profileModelView.swift in Sources */,
+				3ABD683E24E06BEA007C850F /* activityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +532,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -298,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,6 +593,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -352,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -364,19 +624,26 @@
 		};
 		3A6B51E124CC674300835142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87BC83A20923E158E69C53A /* Pods-HUSL Fitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HUSL Fitness/HUSL Fitness.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HUSL Fitness/Preview Content\"";
-				DEVELOPMENT_TEAM = XNFSD2XB4K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HUSL Fitness/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.hustletoken.HUSL-Fitness.HUSL-Fitness";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hustletoken.HUSL.Fitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,19 +651,26 @@
 		};
 		3A6B51E224CC674300835142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217E46197F6F14F7C6081AB3 /* Pods-HUSL Fitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HUSL Fitness/HUSL Fitness.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HUSL Fitness/Preview Content\"";
-				DEVELOPMENT_TEAM = XNFSD2XB4K;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HUSL Fitness/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.hustletoken.HUSL-Fitness.HUSL-Fitness";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.hustletoken.HUSL.Fitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +678,7 @@
 		};
 		3A6B51E424CC674300835142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94BAB56554BFA96ECB900D3 /* Pods-HUSL FitnessTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +701,7 @@
 		};
 		3A6B51E524CC674300835142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C995CFC89C791DAB8BF5AF7 /* Pods-HUSL FitnessTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

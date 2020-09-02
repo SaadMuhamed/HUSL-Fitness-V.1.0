@@ -2,7 +2,7 @@
 //  nutritionAndDietView.swift
 //  HUSL Fitness
 //
-//  Created by Saad Muhamed on 29/7/2020.
+//  Created by Saad Muhamed
 //  Copyright © 2020 Saad Muhamed. All rights reserved.
 //
 
@@ -14,56 +14,27 @@ struct nutritionAndDietView: View {
     
     
     var body: some View {
-        NavigationView {
-            
-            ScrollView {
-                VStack {
-                    ZStack {
-                        firstSection()
-                    }
-                    Divider()
-                    
-                    HealthyMealsVeiw()
-                    
-                    Divider()
-                    
-                    LowCaloriesMealsVeiw()
-                    
-                }.navigationBarTitle("Nutrition & Diet").navigationBarItems(leading:
-                    Image("Navigation HUSL Logo"), trailing:
-                        HStack {
-                            Button(action: {
-                                withAnimation {
-                                    self.isPresented.toggle()
-                                    
-                                }
-                            }) {
-                            Image("Notifications icon")
-                                .renderingMode(.original)
-                                .padding()
-                            }.sheet(isPresented: $isPresented, content: {
-                                notificationsModelView()
-                                
-                            })
-                            Button(action: {
-                                withAnimation {
-                                    self.isPresented.toggle()
-                                    
-                                }
-                           
-                            }) {
-                            Image("Small User Avatar")
-                                .renderingMode(.original)
-                        }.sheet(isPresented: $isPresented, content: {
-                            profileModelView()
-                            
-                        })
+        GeometryReader { view in
+            NavigationView {
+                
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        ZStack {
+                            firstSection()
+                        }
+                        Divider()
                         
-                    }
-                )
+                        HealthyMealsVeiw()
+                        
+                        Divider()
+                        
+                        LowCaloriesMealsVeiw()
+                        
+                    }.navigationBarTitle("Nutrition & Diet").navigationBarItems(leading:
+                        Image("Navigation HUSL Logo"))
+                }
             }
         }
-        
     }
 }
 
@@ -88,8 +59,13 @@ struct firstSection: View {
                         .padding()
                     Text("Breakfast")
                         .font(.headline)
-                }.foregroundColor(.black)
-            }
+                }.foregroundColor(.black).onTapGesture {
+                    self.isPresented.toggle()
+                }
+            }.sheet(isPresented: $isPresented, content: {
+                breakfastModelView()
+                
+            })
             
             Spacer()
             
@@ -105,8 +81,13 @@ struct firstSection: View {
                         .padding()
                     Text("Lunch")
                         .font(.headline)
-                }.foregroundColor(.black)
-            }
+                }.foregroundColor(.black).onTapGesture {
+                    self.isPresented.toggle()
+                }
+            }.sheet(isPresented: $isPresented, content: {
+                lunchModelView()
+                
+            })
             
             Spacer()
             
@@ -122,60 +103,178 @@ struct firstSection: View {
                         .padding()
                     Text("Dinner")
                         .font(.headline)
-                }.foregroundColor(.black)
-            }
+                }.foregroundColor(.black).onTapGesture {
+                    self.isPresented.toggle()
+                }
+            }.sheet(isPresented: $isPresented, content: {
+                dinnerModelView()
+                
+            })
             Spacer()
             
-
+            
         }.padding()
     }
 }
 
+//MARK: - Second Section
+
 struct HealthyMealsVeiw : View {
+    
+    @State var showAllMeals = false
+    let eggsLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let macadamiaNutsLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let asparagusLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let broccoliLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                HStack(alignment: .center) {
-                    Text("We Offer ready meals:")
-                        .font(.system(size: 25, weight: .bold))
-                    Spacer()
-                    Text("See All")
-                        .font(.subheadline)
-                        .opacity(0.5)
-                    
-                }.padding(.bottom, 10)
+                
+                Text("We Offer ready meals:")
+                    .font(.system(size: 25, weight: .bold))
+                    .padding(.bottom, 10)
+                
                 Text("If you feel hungry just check out the below sections.")
                     .font(.subheadline)
                     .opacity(0.5)
                 
-            }.padding()
+                
+            }.padding().frame(maxWidth: .infinity, alignment: .leading)
+            ScrollView(.horizontal, showsIndicators: false) {
+                VStack {
+                    
+                    HStack {
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: "\(self.eggsLink)")!)
+                        }) {
+                            VStack(alignment: .leading) {
+                                Image("Eggs")
+                                    .resizable()
+                                    .renderingMode(.original)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: UIScreen.screenWidth, maxHeight: 90)
+                                    .cornerRadius(10)
+                                
+                                Text("Eggs")
+                                    .foregroundColor(.black)
+                            }
+                            
+                        }
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: "\(self.macadamiaNutsLink)")!)
+                        }) {
+                            VStack(alignment: .leading) {
+                                Image("Macadamia Nuts")
+                                    .resizable()
+                                    .renderingMode(.original)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: UIScreen.screenWidth, maxHeight: 90)
+                                    .cornerRadius(10)
+                                
+                                Text("Macadamia Nuts")
+                                    .foregroundColor(.black)
+                            }
+                            
+                        }
+                        
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: "\(self.asparagusLink)")!)
+                        }) {
+                            VStack(alignment: .leading) {
+                                Image("Asparagus")
+                                    .resizable()
+                                    .renderingMode(.original)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: UIScreen.screenWidth, maxHeight: 90)
+                                    .cornerRadius(10)
+                                
+                                Text("Asparagus")
+                                    .foregroundColor(.black)
+                            }
+                            
+                        }
+                        
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: "\(self.broccoliLink)")!)
+                        }) {
+                            VStack(alignment: .leading) {
+                                Image("Broccoli")
+                                    .resizable()
+                                    .renderingMode(.original)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: UIScreen.screenWidth, maxHeight: 90)
+                                    .cornerRadius(10)
+                                
+                                Text("Broccoli")
+                                    .foregroundColor(.black)
+                            }
+                            
+                            
+                            
+                        }
+                        
+                        
+                        
+                    }
+                    
+                    
+                }.padding([.leading, .trailing])
+            }
+        }.padding(.bottom)
+    }
+}
+
+//MARK: - Third Section
+
+struct LowCaloriesMealsVeiw : View {
+    let oatsLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let chiaSeedsLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let chickenBreastLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    let potatoesLink = "https://www.menshealth.com/nutrition/a20777848/best-healthy-meats/?utm_campaign=socialflowTWMH&utm_source=twitter&utm_medium=social-media"
+    
+    var body: some View {
+        VStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Low Calories meals")
+                        .font(.system(size: 25, weight: .bold))
+                    Spacer()
+                }.padding(.top)
+                
+            }
             
             VStack {
                 
                 // First row
                 HStack {
-                    Button(action: {}) {
+                    Button(action: {
+                        UIApplication.shared.open(URL(string: "\(self.oatsLink)")!)
+                    }) {
                         VStack(alignment: .leading) {
-                            Image("Eggs")
+                            Image("Oats")
                                 .resizable()
                                 .renderingMode(.original)
                                 .aspectRatio(contentMode: .fill)
                                 .cornerRadius(10)
                             
-                            Text("Eggs")
+                            Text("Oats")
                                 .foregroundColor(.black)
                         }
                         
                     }
-                    Button(action: {}) {
+                    Button(action: {
+                        UIApplication.shared.open(URL(string: "\(self.chiaSeedsLink)")!)
+                    }) {
                         VStack(alignment: .leading) {
-                            Image("Macadamia Nuts")
+                            Image("Chia Seeds")
                                 .resizable()
                                 .renderingMode(.original)
                                 .aspectRatio(contentMode: .fill)
                                 .cornerRadius(10)
                             
-                            Text("Macadamia Nuts")
+                            Text("Chia Seeds")
                                 .foregroundColor(.black)
                         }
                         
@@ -187,28 +286,32 @@ struct HealthyMealsVeiw : View {
                 
                 // Second row
                 HStack {
-                    Button(action: {}) {
+                    Button(action: {
+                        UIApplication.shared.open(URL(string: "\(self.chickenBreastLink)")!)
+                    }) {
                         VStack(alignment: .leading) {
-                            Image("Asparagus")
+                            Image("Chicken Breast")
                                 .resizable()
                                 .renderingMode(.original)
                                 .aspectRatio(contentMode: .fill)
                                 .cornerRadius(10)
                             
-                            Text("Asparagus")
+                            Text("Chicken Breast")
                                 .foregroundColor(.black)
                         }
                         
                     }
-                    Button(action: {}) {
+                    Button(action: {
+                        UIApplication.shared.open(URL(string: "\(self.potatoesLink)")!)
+                    }) {
                         VStack(alignment: .leading) {
-                            Image("Broccoli")
+                            Image("Potatoes")
                                 .resizable()
                                 .renderingMode(.original)
                                 .aspectRatio(contentMode: .fill)
                                 .cornerRadius(10)
                             
-                            Text("Broccoli")
+                            Text("Potatoes")
                                 .foregroundColor(.black)
                         }
                         
@@ -219,94 +322,8 @@ struct HealthyMealsVeiw : View {
                 }
                 
                 
-            }.padding([.leading, .trailing])
-        }.padding(.bottom)
-    }
-}
-
-struct LowCaloriesMealsVeiw : View {
-    var body: some View {
-        VStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Low Calories meals")
-                        .font(.system(size: 25, weight: .bold))
-                    Spacer()
-                }.padding(.top)
-                
             }
-        
-        VStack {
-            
-            // First row
-            HStack {
-                Button(action: {}) {
-                    VStack(alignment: .leading) {
-                        Image("Oats")
-                            .resizable()
-                            .renderingMode(.original)
-                            .aspectRatio(contentMode: .fill)
-                            .cornerRadius(10)
-                        
-                        Text("Oats")
-                            .foregroundColor(.black)
-                    }
-                    
-                }
-                Button(action: {}) {
-                    VStack(alignment: .leading) {
-                        Image("Chia Seeds")
-                            .resizable()
-                            .renderingMode(.original)
-                            .aspectRatio(contentMode: .fill)
-                            .cornerRadius(10)
-                        
-                        Text("Chia Seeds")
-                            .foregroundColor(.black)
-                    }
-                    
-                
-                    
-                }
-                
-            }
-            
-            // Second row
-            HStack {
-                Button(action: {}) {
-                    VStack(alignment: .leading) {
-                        Image("Chicken Breast")
-                            .resizable()
-                            .renderingMode(.original)
-                            .aspectRatio(contentMode: .fill)
-                            .cornerRadius(10)
-                        
-                        Text("Chicken Breast")
-                            .foregroundColor(.black)
-                    }
-                    
-                }
-                Button(action: {}) {
-                    VStack(alignment: .leading) {
-                        Image("Potatoes")
-                            .resizable()
-                            .renderingMode(.original)
-                            .aspectRatio(contentMode: .fill)
-                            .cornerRadius(10)
-                        
-                        Text("Potatoes")
-                            .foregroundColor(.black)
-                    }
-                    
-                
-                    
-                }
-                
-            }
-            
-        
-        }
-        }.padding([.leading, .trailing])
+        }.padding([.leading, .trailing, .bottom])
     }
 }
 

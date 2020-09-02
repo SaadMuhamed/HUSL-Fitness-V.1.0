@@ -2,7 +2,7 @@
 //  meditationView.swift
 //  HUSL Fitness
 //
-//  Created by Saad Muhamed on 9/8/2020.
+//  Created by Saad Muhamed
 //  Copyright © 2020 Saad Muhamed. All rights reserved.
 //
 
@@ -10,7 +10,11 @@ import SwiftUI
 
 struct meditationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("")
+            }.navigationBarTitle("Meditation", displayMode: .inline)
+        }
     }
 }
 

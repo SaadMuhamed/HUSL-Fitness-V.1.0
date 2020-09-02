@@ -2,7 +2,7 @@
 //  HUSL_FitnessTests.swift
 //  HUSL FitnessTests
 //
-//  Created by Saad Muhamed on 7/25/20.
+//  Created by Saad Muhamed
 //  Copyright © 2020 Saad Muhamed. All rights reserved.
 //
 

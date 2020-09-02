@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>841978226298-rn7boj5es7qcmrattab40kk1v0ncug9b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.841978226298-rn7boj5es7qcmrattab40kk1v0ncug9b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDp2ERtPr3Jdswj_Ik1HARbYR9jB3rhBso</string>
+	<key>GCM_SENDER_ID</key>
+	<string>841978226298</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.hustletoken.HUSL.Fitness</string>
+	<key>PROJECT_ID</key>
+	<string>husl-fitness</string>
+	<key>STORAGE_BUCKET</key>
+	<string>husl-fitness.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:841978226298:ios:fec8f4fa8fbeb9c308fdc3</string>
+	<key>DATABASE_URL</key>
+	<string>https://husl-fitness.firebaseio.com</string>
+</dict>
+</plist>
